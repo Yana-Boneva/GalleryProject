@@ -1,16 +1,19 @@
 using GalleryProject.Entity;
 using GalleryProject.General;
+using System.Numerics;
 using System.Text.RegularExpressions;
+using System.Media;
 
 namespace GalleryProject
 {
     public partial class SignUpForm : Form
     {
         public User? CreatedUser { get; internal set; }
-
+        private SoundPlayer player;
         public SignUpForm()
         {
             InitializeComponent();
+            player = new SoundPlayer();
         }
 
         private void ButtonCreateUser_Click(object sender, EventArgs e)
@@ -64,12 +67,36 @@ namespace GalleryProject
 
                 CreatedUser = DbManager.LoadUser(email);
                 MessageBox.Show("You were signed up");
+                player.Stop();
                 Close();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("DB error occurred. Please try again." + ex.Message, "Error");
             }
+
+        }
+
+        private void labelName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SignUpForm_Load(object sender, EventArgs e)
+        {
+            string audioFilePath = @"C:\Art Gallery project\Elevator-Music (nearly) 10 minutes.wav";
+            player.SoundLocation = audioFilePath;
+            player.Load();
+            player.Play();
+        }
+
+        private void textBoxName_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }
