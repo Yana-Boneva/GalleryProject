@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StyleEditForm));
             textBoxName = new TextBox();
             label1 = new Label();
             textBoxDescription = new TextBox();
@@ -41,91 +42,111 @@
             // 
             // textBoxName
             // 
-            textBoxName.Location = new Point(248, 102);
+            textBoxName.Location = new Point(181, 121);
+            textBoxName.Margin = new Padding(1, 1, 1, 1);
             textBoxName.Name = "textBoxName";
-            textBoxName.Size = new Size(361, 47);
+            textBoxName.Size = new Size(172, 27);
             textBoxName.TabIndex = 0;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(12, 105);
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Sylfaen", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(10, 122);
+            label1.Margin = new Padding(1, 0, 1, 0);
             label1.Name = "label1";
-            label1.Size = new Size(97, 41);
+            label1.Size = new Size(69, 26);
             label1.TabIndex = 1;
-            label1.Text = "Name";
+            label1.Text = "Name:";
             // 
             // textBoxDescription
             // 
-            textBoxDescription.Location = new Point(12, 214);
+            textBoxDescription.Location = new Point(161, 174);
+            textBoxDescription.Margin = new Padding(1, 1, 1, 1);
             textBoxDescription.Multiline = true;
             textBoxDescription.Name = "textBoxDescription";
             textBoxDescription.ScrollBars = ScrollBars.Both;
-            textBoxDescription.Size = new Size(972, 240);
+            textBoxDescription.Size = new Size(460, 119);
             textBoxDescription.TabIndex = 2;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(12, 166);
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Sylfaen", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(10, 173);
+            label2.Margin = new Padding(1, 0, 1, 0);
             label2.Name = "label2";
-            label2.Size = new Size(169, 41);
+            label2.Size = new Size(116, 26);
             label2.TabIndex = 3;
-            label2.Text = "Description";
+            label2.Text = "Description:";
             // 
             // buttonInsert
             // 
-            buttonInsert.Location = new Point(141, 489);
+            buttonInsert.BackgroundImage = (Image)resources.GetObject("buttonInsert.BackgroundImage");
+            buttonInsert.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonInsert.Location = new Point(76, 326);
+            buttonInsert.Margin = new Padding(1, 1, 1, 1);
             buttonInsert.Name = "buttonInsert";
-            buttonInsert.Size = new Size(188, 58);
+            buttonInsert.Size = new Size(66, 51);
             buttonInsert.TabIndex = 4;
-            buttonInsert.Text = "Insert";
             buttonInsert.UseVisualStyleBackColor = true;
             buttonInsert.Click += ButtonInsert_Click;
             // 
             // comboBoxStyle
             // 
             comboBoxStyle.FormattingEnabled = true;
-            comboBoxStyle.Location = new Point(248, 32);
+            comboBoxStyle.Location = new Point(181, 64);
+            comboBoxStyle.Margin = new Padding(1, 1, 1, 1);
             comboBoxStyle.Name = "comboBoxStyle";
-            comboBoxStyle.Size = new Size(361, 49);
+            comboBoxStyle.Size = new Size(172, 28);
             comboBoxStyle.TabIndex = 5;
             comboBoxStyle.SelectedIndexChanged += ComboBoxStyle_SelectedIndexChanged;
             // 
             // buttonDelete
             // 
-            buttonDelete.Location = new Point(626, 489);
+            buttonDelete.BackgroundImage = (Image)resources.GetObject("buttonDelete.BackgroundImage");
+            buttonDelete.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonDelete.Font = new Font("Sylfaen", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonDelete.Location = new Point(580, 326);
+            buttonDelete.Margin = new Padding(1, 1, 1, 1);
             buttonDelete.Name = "buttonDelete";
-            buttonDelete.Size = new Size(188, 58);
+            buttonDelete.Size = new Size(61, 49);
             buttonDelete.TabIndex = 6;
-            buttonDelete.Text = "Delete";
             buttonDelete.UseVisualStyleBackColor = true;
             buttonDelete.Click += ButtonDelete_Click;
             // 
             // buttonUpdate
             // 
-            buttonUpdate.Location = new Point(379, 489);
+            buttonUpdate.BackgroundImage = (Image)resources.GetObject("buttonUpdate.BackgroundImage");
+            buttonUpdate.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonUpdate.Location = new Point(344, 326);
+            buttonUpdate.Margin = new Padding(1, 1, 1, 1);
             buttonUpdate.Name = "buttonUpdate";
-            buttonUpdate.Size = new Size(188, 58);
+            buttonUpdate.Size = new Size(58, 49);
             buttonUpdate.TabIndex = 7;
-            buttonUpdate.Text = "Update";
             buttonUpdate.UseVisualStyleBackColor = true;
             buttonUpdate.Click += ButtonUpdate_Click;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(12, 35);
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("Sylfaen", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Location = new Point(10, 66);
+            label3.Margin = new Padding(1, 0, 1, 0);
             label3.Name = "label3";
-            label3.Size = new Size(81, 41);
+            label3.Size = new Size(59, 26);
             label3.TabIndex = 8;
-            label3.Text = "Style";
+            label3.Text = "Style:";
             // 
             // StyleEditForm
             // 
-            AutoScaleDimensions = new SizeF(17F, 41F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(996, 566);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            ClientSize = new Size(674, 402);
             Controls.Add(label3);
             Controls.Add(buttonUpdate);
             Controls.Add(buttonDelete);
@@ -135,6 +156,7 @@
             Controls.Add(textBoxDescription);
             Controls.Add(label1);
             Controls.Add(textBoxName);
+            Margin = new Padding(1, 1, 1, 1);
             Name = "StyleEditForm";
             Text = "Style Edit Form";
             ResumeLayout(false);

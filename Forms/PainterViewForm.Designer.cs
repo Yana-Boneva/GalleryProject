@@ -46,118 +46,130 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(845, 83);
+            label7.Location = new Point(513, 44);
+            label7.Margin = new Padding(1, 0, 1, 0);
             label7.Name = "label7";
-            label7.Size = new Size(101, 41);
+            label7.Size = new Size(51, 20);
             label7.TabIndex = 30;
             label7.Text = "Image";
             // 
             // pictureBox1
             // 
             pictureBox1.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox1.Location = new Point(704, 133);
+            pictureBox1.Location = new Point(451, 78);
+            pictureBox1.Margin = new Padding(1, 1, 1, 1);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(397, 242);
+            pictureBox1.Size = new Size(188, 119);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 29;
             pictureBox1.TabStop = false;
             // 
             // textBoxNotes
             // 
-            textBoxNotes.Location = new Point(12, 466);
+            textBoxNotes.Location = new Point(6, 227);
+            textBoxNotes.Margin = new Padding(1, 1, 1, 1);
             textBoxNotes.Multiline = true;
             textBoxNotes.Name = "textBoxNotes";
             textBoxNotes.ReadOnly = true;
             textBoxNotes.ScrollBars = ScrollBars.Both;
-            textBoxNotes.Size = new Size(1089, 240);
+            textBoxNotes.Size = new Size(515, 119);
             textBoxNotes.TabIndex = 28;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(12, 385);
+            label5.Location = new Point(6, 188);
+            label5.Margin = new Padding(1, 0, 1, 0);
             label5.Name = "label5";
-            label5.Size = new Size(97, 41);
+            label5.Size = new Size(48, 20);
             label5.TabIndex = 27;
             label5.Text = "Notes";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(12, 328);
+            label4.Location = new Point(6, 160);
+            label4.Margin = new Padding(1, 0, 1, 0);
             label4.Name = "label4";
-            label4.Size = new Size(199, 41);
+            label4.Size = new Size(101, 20);
             label4.TabIndex = 24;
             label4.Text = "Date of death";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(12, 267);
+            label3.Location = new Point(6, 130);
+            label3.Margin = new Padding(1, 0, 1, 0);
             label3.Name = "label3";
-            label3.Size = new Size(185, 41);
+            label3.Size = new Size(94, 20);
             label3.TabIndex = 23;
             label3.Text = "Date of birth";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(12, 200);
+            label2.Location = new Point(6, 98);
+            label2.Margin = new Padding(1, 0, 1, 0);
             label2.Name = "label2";
-            label2.Size = new Size(157, 41);
+            label2.Size = new Size(79, 20);
             label2.TabIndex = 21;
             label2.Text = "Last Name";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(12, 133);
+            label1.Location = new Point(6, 65);
+            label1.Margin = new Padding(1, 0, 1, 0);
             label1.Name = "label1";
-            label1.Size = new Size(160, 41);
+            label1.Size = new Size(80, 20);
             label1.TabIndex = 20;
             label1.Text = "First Name";
             // 
             // labelFirstName
             // 
             labelFirstName.AutoSize = true;
-            labelFirstName.Location = new Point(310, 133);
+            labelFirstName.Location = new Point(146, 65);
+            labelFirstName.Margin = new Padding(1, 0, 1, 0);
             labelFirstName.Name = "labelFirstName";
-            labelFirstName.Size = new Size(160, 41);
+            labelFirstName.Size = new Size(80, 20);
             labelFirstName.TabIndex = 31;
             labelFirstName.Text = "First Name";
             // 
             // labelLastName
             // 
             labelLastName.AutoSize = true;
-            labelLastName.Location = new Point(310, 200);
+            labelLastName.Location = new Point(146, 98);
+            labelLastName.Margin = new Padding(1, 0, 1, 0);
             labelLastName.Name = "labelLastName";
-            labelLastName.Size = new Size(157, 41);
+            labelLastName.Size = new Size(79, 20);
             labelLastName.TabIndex = 32;
             labelLastName.Text = "Last Name";
             // 
             // labelDateOfBirth
             // 
             labelDateOfBirth.AutoSize = true;
-            labelDateOfBirth.Location = new Point(310, 267);
+            labelDateOfBirth.Location = new Point(146, 130);
+            labelDateOfBirth.Margin = new Padding(1, 0, 1, 0);
             labelDateOfBirth.Name = "labelDateOfBirth";
-            labelDateOfBirth.Size = new Size(184, 41);
+            labelDateOfBirth.Size = new Size(94, 20);
             labelDateOfBirth.TabIndex = 33;
             labelDateOfBirth.Text = "Date of Birth";
             // 
             // labelDateOfDeath
             // 
             labelDateOfDeath.AutoSize = true;
-            labelDateOfDeath.Location = new Point(310, 328);
+            labelDateOfDeath.Location = new Point(146, 160);
+            labelDateOfDeath.Margin = new Padding(1, 0, 1, 0);
             labelDateOfDeath.Name = "labelDateOfDeath";
-            labelDateOfDeath.Size = new Size(199, 41);
+            labelDateOfDeath.Size = new Size(101, 20);
             labelDateOfDeath.TabIndex = 34;
             labelDateOfDeath.Text = "Date of death";
             // 
             // PainterViewForm
             // 
-            AutoScaleDimensions = new SizeF(17F, 41F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1113, 780);
+            ClientSize = new Size(703, 439);
             Controls.Add(labelDateOfDeath);
             Controls.Add(labelDateOfBirth);
             Controls.Add(labelLastName);
@@ -170,6 +182,7 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
+            Margin = new Padding(1, 1, 1, 1);
             Name = "PainterViewForm";
             Text = "Painter Info";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

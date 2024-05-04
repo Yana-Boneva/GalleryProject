@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PaintingEditForm));
             textBoxName = new TextBox();
             label1 = new Label();
             buttonInsert = new Button();
@@ -50,109 +51,132 @@
             // 
             // textBoxName
             // 
-            textBoxName.Location = new Point(248, 111);
+            textBoxName.Location = new Point(130, 88);
+            textBoxName.Margin = new Padding(1, 1, 1, 1);
             textBoxName.Name = "textBoxName";
-            textBoxName.Size = new Size(450, 47);
+            textBoxName.Size = new Size(214, 27);
             textBoxName.TabIndex = 0;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(12, 111);
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Sylfaen", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(16, 89);
+            label1.Margin = new Padding(1, 0, 1, 0);
             label1.Name = "label1";
-            label1.Size = new Size(97, 41);
+            label1.Size = new Size(69, 26);
             label1.TabIndex = 1;
-            label1.Text = "Name";
+            label1.Text = "Name:";
             // 
             // buttonInsert
             // 
-            buttonInsert.Location = new Point(12, 710);
+            buttonInsert.BackgroundImage = (Image)resources.GetObject("buttonInsert.BackgroundImage");
+            buttonInsert.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonInsert.Location = new Point(81, 391);
+            buttonInsert.Margin = new Padding(1, 1, 1, 1);
             buttonInsert.Name = "buttonInsert";
-            buttonInsert.Size = new Size(188, 58);
+            buttonInsert.Size = new Size(57, 48);
             buttonInsert.TabIndex = 4;
-            buttonInsert.Text = "Insert";
             buttonInsert.UseVisualStyleBackColor = true;
             buttonInsert.Click += ButtonInsert_Click;
             // 
             // comboBoxPainter
             // 
             comboBoxPainter.FormattingEnabled = true;
-            comboBoxPainter.Location = new Point(248, 181);
+            comboBoxPainter.Location = new Point(130, 127);
+            comboBoxPainter.Margin = new Padding(1, 1, 1, 1);
             comboBoxPainter.Name = "comboBoxPainter";
-            comboBoxPainter.Size = new Size(450, 49);
+            comboBoxPainter.Size = new Size(214, 28);
             comboBoxPainter.TabIndex = 5;
             // 
             // buttonDelete
             // 
-            buttonDelete.Location = new Point(525, 710);
+            buttonDelete.BackgroundImage = (Image)resources.GetObject("buttonDelete.BackgroundImage");
+            buttonDelete.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonDelete.Location = new Point(656, 391);
+            buttonDelete.Margin = new Padding(1, 1, 1, 1);
             buttonDelete.Name = "buttonDelete";
-            buttonDelete.Size = new Size(188, 58);
+            buttonDelete.Size = new Size(55, 48);
             buttonDelete.TabIndex = 6;
-            buttonDelete.Text = "Delete";
             buttonDelete.UseVisualStyleBackColor = true;
             buttonDelete.Click += ButtonDelete_Click;
             // 
             // buttonUpdate
             // 
-            buttonUpdate.Location = new Point(282, 710);
+            buttonUpdate.BackgroundImage = (Image)resources.GetObject("buttonUpdate.BackgroundImage");
+            buttonUpdate.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonUpdate.Location = new Point(363, 395);
+            buttonUpdate.Margin = new Padding(1, 1, 1, 1);
             buttonUpdate.Name = "buttonUpdate";
-            buttonUpdate.Size = new Size(188, 58);
+            buttonUpdate.Size = new Size(49, 45);
             buttonUpdate.TabIndex = 7;
-            buttonUpdate.Text = "Update";
             buttonUpdate.UseVisualStyleBackColor = true;
             buttonUpdate.Click += ButtonUpdate_Click;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(12, 306);
+            label4.BackColor = Color.Transparent;
+            label4.Font = new Font("Sylfaen", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.Location = new Point(16, 210);
+            label4.Margin = new Padding(1, 0, 1, 0);
             label4.Name = "label4";
-            label4.Size = new Size(80, 41);
+            label4.Size = new Size(57, 26);
             label4.TabIndex = 11;
-            label4.Text = "Date";
+            label4.Text = "Date:";
             // 
             // dateTimeDate
             // 
             dateTimeDate.Format = DateTimePickerFormat.Short;
-            dateTimeDate.Location = new Point(248, 306);
+            dateTimeDate.Location = new Point(130, 210);
+            dateTimeDate.Margin = new Padding(1, 1, 1, 1);
             dateTimeDate.Name = "dateTimeDate";
             dateTimeDate.ShowCheckBox = true;
-            dateTimeDate.Size = new Size(450, 47);
+            dateTimeDate.Size = new Size(214, 27);
             dateTimeDate.TabIndex = 13;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(12, 363);
+            label5.BackColor = Color.Transparent;
+            label5.Font = new Font("Sylfaen", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.Location = new Point(10, 255);
+            label5.Margin = new Padding(1, 0, 1, 0);
             label5.Name = "label5";
-            label5.Size = new Size(97, 41);
+            label5.Size = new Size(65, 26);
             label5.TabIndex = 14;
-            label5.Text = "Notes";
+            label5.Text = "Notes:";
             // 
             // textBoxNotes
             // 
-            textBoxNotes.Location = new Point(12, 435);
+            textBoxNotes.Location = new Point(130, 256);
+            textBoxNotes.Margin = new Padding(1, 1, 1, 1);
             textBoxNotes.Multiline = true;
             textBoxNotes.Name = "textBoxNotes";
             textBoxNotes.ScrollBars = ScrollBars.Both;
-            textBoxNotes.Size = new Size(1089, 240);
+            textBoxNotes.Size = new Size(515, 119);
             textBoxNotes.TabIndex = 15;
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(12, 184);
+            label6.BackColor = Color.Transparent;
+            label6.Font = new Font("Sylfaen", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label6.Location = new Point(16, 129);
+            label6.Margin = new Padding(1, 0, 1, 0);
             label6.Name = "label6";
-            label6.Size = new Size(109, 41);
+            label6.Size = new Size(81, 26);
             label6.TabIndex = 16;
-            label6.Text = "Painter";
+            label6.Text = "Painter:";
             // 
             // pictureBox1
             // 
             pictureBox1.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox1.Location = new Point(704, 111);
+            pictureBox1.Location = new Point(523, 88);
+            pictureBox1.Margin = new Padding(1, 1, 1, 1);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(397, 242);
+            pictureBox1.Size = new Size(169, 130);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 17;
             pictureBox1.TabStop = false;
@@ -161,52 +185,64 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(845, 61);
+            label7.BackColor = Color.Transparent;
+            label7.Font = new Font("Sylfaen", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label7.Location = new Point(567, 41);
+            label7.Margin = new Padding(1, 0, 1, 0);
             label7.Name = "label7";
-            label7.Size = new Size(101, 41);
+            label7.Size = new Size(67, 26);
             label7.TabIndex = 18;
             label7.Text = "Image";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(12, 250);
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Sylfaen", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(16, 168);
+            label2.Margin = new Padding(1, 0, 1, 0);
             label2.Name = "label2";
-            label2.Size = new Size(81, 41);
+            label2.Size = new Size(59, 26);
             label2.TabIndex = 19;
-            label2.Text = "Style";
+            label2.Text = "Style:";
             // 
             // comboBoxStyle
             // 
             comboBoxStyle.FormattingEnabled = true;
-            comboBoxStyle.Location = new Point(248, 247);
+            comboBoxStyle.Location = new Point(130, 168);
+            comboBoxStyle.Margin = new Padding(1, 1, 1, 1);
             comboBoxStyle.Name = "comboBoxStyle";
-            comboBoxStyle.Size = new Size(450, 49);
+            comboBoxStyle.Size = new Size(214, 28);
             comboBoxStyle.TabIndex = 20;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(12, 22);
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("Sylfaen", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Location = new Point(16, 41);
+            label3.Margin = new Padding(1, 0, 1, 0);
             label3.Name = "label3";
-            label3.Size = new Size(125, 41);
+            label3.Size = new Size(92, 26);
             label3.TabIndex = 21;
-            label3.Text = "Painting";
+            label3.Text = "Painting:";
             // 
             // comboBoxPainting
             // 
             comboBoxPainting.FormattingEnabled = true;
-            comboBoxPainting.Location = new Point(248, 19);
+            comboBoxPainting.Location = new Point(130, 42);
+            comboBoxPainting.Margin = new Padding(1, 1, 1, 1);
             comboBoxPainting.Name = "comboBoxPainting";
-            comboBoxPainting.Size = new Size(450, 49);
+            comboBoxPainting.Size = new Size(214, 28);
             comboBoxPainting.TabIndex = 22;
             comboBoxPainting.SelectedIndexChanged += ComboBoxPainting_SelectedIndexChanged;
             // 
             // PaintingEditForm
             // 
-            AutoScaleDimensions = new SizeF(17F, 41F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1113, 780);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            ClientSize = new Size(773, 450);
             Controls.Add(comboBoxPainting);
             Controls.Add(label3);
             Controls.Add(comboBoxStyle);
@@ -224,6 +260,7 @@
             Controls.Add(buttonInsert);
             Controls.Add(label1);
             Controls.Add(textBoxName);
+            Margin = new Padding(1, 1, 1, 1);
             Name = "PaintingEditForm";
             Text = "Painting Edit Form";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
