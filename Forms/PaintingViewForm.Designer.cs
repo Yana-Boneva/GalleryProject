@@ -43,7 +43,7 @@
             // labelDate
             // 
             labelDate.BackColor = Color.Transparent;
-            labelDate.Location = new Point(58, 399);
+            labelDate.Location = new Point(58, 411);
             labelDate.Margin = new Padding(1, 0, 1, 0);
             labelDate.Name = "labelDate";
             labelDate.Size = new Size(401, 20);
@@ -67,7 +67,7 @@
             // textBoxNotes
             // 
             textBoxNotes.Location = new Point(10, 502);
-            textBoxNotes.Margin = new Padding(1, 1, 1, 1);
+            textBoxNotes.Margin = new Padding(1);
             textBoxNotes.Multiline = true;
             textBoxNotes.Name = "textBoxNotes";
             textBoxNotes.ScrollBars = ScrollBars.Both;
@@ -77,7 +77,7 @@
             // pictureBox1
             // 
             pictureBox1.Location = new Point(119, 57);
-            pictureBox1.Margin = new Padding(1, 1, 1, 1);
+            pictureBox1.Margin = new Padding(1);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(282, 293);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -87,7 +87,7 @@
             // labelName
             // 
             labelName.BackColor = Color.Transparent;
-            labelName.Font = new Font("Sylfaen", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            labelName.Font = new Font("Sylfaen", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             labelName.ForeColor = Color.Maroon;
             labelName.Location = new Point(58, 27);
             labelName.Margin = new Padding(1, 0, 1, 0);
@@ -104,7 +104,7 @@
             checkBoxFavorite.Font = new Font("Sylfaen", 12F, FontStyle.Regular, GraphicsUnit.Point);
             checkBoxFavorite.ForeColor = Color.Maroon;
             checkBoxFavorite.Location = new Point(404, 328);
-            checkBoxFavorite.Margin = new Padding(1, 1, 1, 1);
+            checkBoxFavorite.Margin = new Padding(1);
             checkBoxFavorite.Name = "checkBoxFavorite";
             checkBoxFavorite.Size = new Size(105, 30);
             checkBoxFavorite.TabIndex = 15;
@@ -115,7 +115,7 @@
             // linkLabelPainter
             // 
             linkLabelPainter.BackColor = Color.Transparent;
-            linkLabelPainter.Font = new Font("Sylfaen", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            linkLabelPainter.Font = new Font("Sylfaen", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             linkLabelPainter.Location = new Point(58, 370);
             linkLabelPainter.Margin = new Padding(1, 0, 1, 0);
             linkLabelPainter.Name = "linkLabelPainter";
@@ -154,7 +154,7 @@
             Controls.Add(textBoxNotes);
             Controls.Add(label5);
             Controls.Add(labelDate);
-            Margin = new Padding(1, 1, 1, 1);
+            Margin = new Padding(1);
             Name = "PaintingViewForm";
             Text = "Painting Details";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

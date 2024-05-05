@@ -43,7 +43,7 @@
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Sylfaen", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(73, 65);
+            label1.Location = new Point(62, 59);
             label1.Margin = new Padding(1, 0, 1, 0);
             label1.Name = "label1";
             label1.Size = new Size(135, 26);
@@ -55,7 +55,7 @@
             label2.AutoSize = true;
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Sylfaen", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(73, 122);
+            label2.Location = new Point(62, 116);
             label2.Margin = new Padding(1, 0, 1, 0);
             label2.Name = "label2";
             label2.Size = new Size(146, 26);
@@ -67,7 +67,7 @@
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Sylfaen", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(73, 169);
+            label3.Location = new Point(104, 169);
             label3.Margin = new Padding(1, 0, 1, 0);
             label3.Name = "label3";
             label3.Size = new Size(59, 26);
@@ -77,7 +77,7 @@
             // textBoxPainter
             // 
             textBoxPainter.Location = new Point(268, 58);
-            textBoxPainter.Margin = new Padding(1, 1, 1, 1);
+            textBoxPainter.Margin = new Padding(1);
             textBoxPainter.Name = "textBoxPainter";
             textBoxPainter.Size = new Size(208, 27);
             textBoxPainter.TabIndex = 3;
@@ -85,7 +85,7 @@
             // textBoxPainting
             // 
             textBoxPainting.Location = new Point(268, 115);
-            textBoxPainting.Margin = new Padding(1, 1, 1, 1);
+            textBoxPainting.Margin = new Padding(1);
             textBoxPainting.Name = "textBoxPainting";
             textBoxPainting.Size = new Size(208, 27);
             textBoxPainting.TabIndex = 4;
@@ -94,7 +94,7 @@
             // 
             comboBoxStyle.FormattingEnabled = true;
             comboBoxStyle.Location = new Point(268, 167);
-            comboBoxStyle.Margin = new Padding(1, 1, 1, 1);
+            comboBoxStyle.Margin = new Padding(1);
             comboBoxStyle.Name = "comboBoxStyle";
             comboBoxStyle.Size = new Size(208, 28);
             comboBoxStyle.TabIndex = 5;
@@ -104,7 +104,7 @@
             buttonApply.BackgroundImage = (Image)resources.GetObject("buttonApply.BackgroundImage");
             buttonApply.BackgroundImageLayout = ImageLayout.Stretch;
             buttonApply.Location = new Point(237, 222);
-            buttonApply.Margin = new Padding(1, 1, 1, 1);
+            buttonApply.Margin = new Padding(1);
             buttonApply.Name = "buttonApply";
             buttonApply.Size = new Size(63, 52);
             buttonApply.TabIndex = 6;
@@ -124,7 +124,7 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Margin = new Padding(1, 1, 1, 1);
+            Margin = new Padding(1);
             Name = "SearchForm";
             Text = "Search";
             ResumeLayout(false);

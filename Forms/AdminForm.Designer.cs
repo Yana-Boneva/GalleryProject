@@ -35,6 +35,8 @@
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // buttonStyle
@@ -42,7 +44,7 @@
             buttonStyle.BackgroundImage = (Image)resources.GetObject("buttonStyle.BackgroundImage");
             buttonStyle.BackgroundImageLayout = ImageLayout.Stretch;
             buttonStyle.Location = new Point(10, 114);
-            buttonStyle.Margin = new Padding(1, 1, 1, 1);
+            buttonStyle.Margin = new Padding(1);
             buttonStyle.Name = "buttonStyle";
             buttonStyle.Size = new Size(214, 136);
             buttonStyle.TabIndex = 0;
@@ -54,7 +56,7 @@
             buttonPainter.BackgroundImage = (Image)resources.GetObject("buttonPainter.BackgroundImage");
             buttonPainter.BackgroundImageLayout = ImageLayout.Stretch;
             buttonPainter.Location = new Point(260, 100);
-            buttonPainter.Margin = new Padding(1, 1, 1, 1);
+            buttonPainter.Margin = new Padding(1);
             buttonPainter.Name = "buttonPainter";
             buttonPainter.Size = new Size(190, 169);
             buttonPainter.TabIndex = 1;
@@ -66,7 +68,7 @@
             buttonPainting.BackgroundImage = (Image)resources.GetObject("buttonPainting.BackgroundImage");
             buttonPainting.BackgroundImageLayout = ImageLayout.Stretch;
             buttonPainting.Location = new Point(488, 114);
-            buttonPainting.Margin = new Padding(1, 1, 1, 1);
+            buttonPainting.Margin = new Padding(1);
             buttonPainting.Name = "buttonPainting";
             buttonPainting.Size = new Size(218, 140);
             buttonPainting.TabIndex = 2;
@@ -109,6 +111,16 @@
             label3.TabIndex = 5;
             label3.Text = "Paintings";
             // 
+            // pictureBox1
+            // 
+            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
+            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox1.Location = new Point(1, 2);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(60, 47);
+            pictureBox1.TabIndex = 6;
+            pictureBox1.TabStop = false;
+            // 
             // AdminForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -116,15 +128,17 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(728, 390);
+            Controls.Add(pictureBox1);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(buttonPainting);
             Controls.Add(buttonPainter);
             Controls.Add(buttonStyle);
-            Margin = new Padding(1, 1, 1, 1);
+            Margin = new Padding(1);
             Name = "AdminForm";
             Text = "Admin Form";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -137,5 +151,6 @@
         private Label label1;
         private Label label2;
         private Label label3;
+        private PictureBox pictureBox1;
     }
 }

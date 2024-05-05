@@ -46,7 +46,7 @@
             // textBoxEmail
             // 
             textBoxEmail.Location = new Point(186, 145);
-            textBoxEmail.Margin = new Padding(1, 1, 1, 1);
+            textBoxEmail.Margin = new Padding(1);
             textBoxEmail.Name = "textBoxEmail";
             textBoxEmail.Size = new Size(190, 27);
             textBoxEmail.TabIndex = 13;
@@ -54,7 +54,7 @@
             // textBoxConfirmPassword
             // 
             textBoxConfirmPassword.Location = new Point(186, 232);
-            textBoxConfirmPassword.Margin = new Padding(1, 1, 1, 1);
+            textBoxConfirmPassword.Margin = new Padding(1);
             textBoxConfirmPassword.Name = "textBoxConfirmPassword";
             textBoxConfirmPassword.Size = new Size(190, 27);
             textBoxConfirmPassword.TabIndex = 17;
@@ -128,7 +128,7 @@
             // 
             pictureBox1.BorderStyle = BorderStyle.FixedSingle;
             pictureBox1.Location = new Point(445, 96);
-            pictureBox1.Margin = new Padding(1, 1, 1, 1);
+            pictureBox1.Margin = new Padding(1);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(173, 162);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -142,21 +142,21 @@
             label7.AutoSize = true;
             label7.BackColor = Color.Transparent;
             label7.Font = new Font("Sylfaen", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.Location = new Point(493, 53);
+            label7.Location = new Point(497, 55);
             label7.Margin = new Padding(1, 0, 1, 0);
             label7.Name = "label7";
-            label7.Size = new Size(67, 26);
+            label7.Size = new Size(72, 26);
             label7.TabIndex = 19;
-            label7.Text = "Image";
+            label7.Text = "Image:";
             // 
             // buttonSave
             // 
             buttonSave.BackgroundImage = (Image)resources.GetObject("buttonSave.BackgroundImage");
             buttonSave.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonSave.Location = new Point(492, 301);
-            buttonSave.Margin = new Padding(1, 1, 1, 1);
+            buttonSave.Location = new Point(507, 295);
+            buttonSave.Margin = new Padding(1);
             buttonSave.Name = "buttonSave";
-            buttonSave.Size = new Size(68, 56);
+            buttonSave.Size = new Size(53, 46);
             buttonSave.TabIndex = 20;
             buttonSave.UseVisualStyleBackColor = true;
             buttonSave.Click += ButtonSave_Click;
@@ -179,7 +179,7 @@
             Controls.Add(textBoxName);
             Controls.Add(label2);
             Controls.Add(label1);
-            Margin = new Padding(1, 1, 1, 1);
+            Margin = new Padding(1);
             Name = "UserSettingsForm";
             Text = "User Settings";
             Load += UserSettingsForm_Load;

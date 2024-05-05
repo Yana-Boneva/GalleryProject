@@ -43,7 +43,7 @@
             // textBoxName
             // 
             textBoxName.Location = new Point(181, 121);
-            textBoxName.Margin = new Padding(1, 1, 1, 1);
+            textBoxName.Margin = new Padding(1);
             textBoxName.Name = "textBoxName";
             textBoxName.Size = new Size(172, 27);
             textBoxName.TabIndex = 0;
@@ -63,7 +63,7 @@
             // textBoxDescription
             // 
             textBoxDescription.Location = new Point(161, 174);
-            textBoxDescription.Margin = new Padding(1, 1, 1, 1);
+            textBoxDescription.Margin = new Padding(1);
             textBoxDescription.Multiline = true;
             textBoxDescription.Name = "textBoxDescription";
             textBoxDescription.ScrollBars = ScrollBars.Both;
@@ -86,10 +86,10 @@
             // 
             buttonInsert.BackgroundImage = (Image)resources.GetObject("buttonInsert.BackgroundImage");
             buttonInsert.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonInsert.Location = new Point(76, 326);
-            buttonInsert.Margin = new Padding(1, 1, 1, 1);
+            buttonInsert.Location = new Point(89, 309);
+            buttonInsert.Margin = new Padding(1);
             buttonInsert.Name = "buttonInsert";
-            buttonInsert.Size = new Size(66, 51);
+            buttonInsert.Size = new Size(53, 49);
             buttonInsert.TabIndex = 4;
             buttonInsert.UseVisualStyleBackColor = true;
             buttonInsert.Click += ButtonInsert_Click;
@@ -98,7 +98,7 @@
             // 
             comboBoxStyle.FormattingEnabled = true;
             comboBoxStyle.Location = new Point(181, 64);
-            comboBoxStyle.Margin = new Padding(1, 1, 1, 1);
+            comboBoxStyle.Margin = new Padding(1);
             comboBoxStyle.Name = "comboBoxStyle";
             comboBoxStyle.Size = new Size(172, 28);
             comboBoxStyle.TabIndex = 5;
@@ -109,10 +109,10 @@
             buttonDelete.BackgroundImage = (Image)resources.GetObject("buttonDelete.BackgroundImage");
             buttonDelete.BackgroundImageLayout = ImageLayout.Stretch;
             buttonDelete.Font = new Font("Sylfaen", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            buttonDelete.Location = new Point(580, 326);
-            buttonDelete.Margin = new Padding(1, 1, 1, 1);
+            buttonDelete.Location = new Point(574, 309);
+            buttonDelete.Margin = new Padding(1);
             buttonDelete.Name = "buttonDelete";
-            buttonDelete.Size = new Size(61, 49);
+            buttonDelete.Size = new Size(47, 49);
             buttonDelete.TabIndex = 6;
             buttonDelete.UseVisualStyleBackColor = true;
             buttonDelete.Click += ButtonDelete_Click;
@@ -121,10 +121,10 @@
             // 
             buttonUpdate.BackgroundImage = (Image)resources.GetObject("buttonUpdate.BackgroundImage");
             buttonUpdate.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonUpdate.Location = new Point(344, 326);
-            buttonUpdate.Margin = new Padding(1, 1, 1, 1);
+            buttonUpdate.Location = new Point(327, 309);
+            buttonUpdate.Margin = new Padding(1);
             buttonUpdate.Name = "buttonUpdate";
-            buttonUpdate.Size = new Size(58, 49);
+            buttonUpdate.Size = new Size(51, 50);
             buttonUpdate.TabIndex = 7;
             buttonUpdate.UseVisualStyleBackColor = true;
             buttonUpdate.Click += ButtonUpdate_Click;
@@ -146,7 +146,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(674, 402);
+            ClientSize = new Size(674, 360);
             Controls.Add(label3);
             Controls.Add(buttonUpdate);
             Controls.Add(buttonDelete);
@@ -156,7 +156,7 @@
             Controls.Add(textBoxDescription);
             Controls.Add(label1);
             Controls.Add(textBoxName);
-            Margin = new Padding(1, 1, 1, 1);
+            Margin = new Padding(1);
             Name = "StyleEditForm";
             Text = "Style Edit Form";
             ResumeLayout(false);

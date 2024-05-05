@@ -1,12 +1,10 @@
 ﻿using GalleryProject.Entity;
 using GalleryProject.General;
-using System.Media;
 
 namespace GalleryProject.Forms
 {
     public partial class GalleryAppForm : Form
     {
-        private SoundPlayer player;
         User? _loggedUser = null;
         PaintingFilter _paintingFilter = new();
         List<int> _paintingsIDs;
@@ -14,7 +12,6 @@ namespace GalleryProject.Forms
         public GalleryAppForm()
         {
             InitializeComponent();
-            player = new SoundPlayer();
             if (_loggedUser == null)
             {
                 Login();
@@ -167,15 +164,10 @@ namespace GalleryProject.Forms
 
         private void GalleryAppForm_Load(object sender, EventArgs e)
         {
-            string audioFilePath = @"C:\Users\Elitza\Downloads\9 Minutes of Jazz Music for Focusing and Calm.wav";
-            player.SoundLocation = audioFilePath;
-            player.Load();
-            player.Play();
+          
         }
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            player.Stop(); // Stop the music when the form is closing
-            player.Dispose(); // Dispose the SoundPlayer object to release resources
         }
     }
 }

@@ -1,14 +1,19 @@
 using GalleryProject.Entity;
 using GalleryProject.General;
+using System.Media;
 
 namespace GalleryProject
 {
     public partial class LoginForm : Form
     {
+        private SoundPlayer player;
+        private bool isMusicPlaying = false;
         public User? LoggedUser { get; internal set; }
         public LoginForm()
         {
             InitializeComponent();
+           player = new SoundPlayer(@"C:\Art Gallery project\9 Minutes of Jazz Music for Focusing and Calm.wav");
+            StartPlayingMusic();
         }
 
         private void ButtonSignUp_Click(object sender, EventArgs e)
@@ -48,6 +53,36 @@ namespace GalleryProject
 
         }
 
+        private void sound_Click(object sender, EventArgs e)
+        {
+            ToggleMusicPlayback();
+        }
 
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+            StartPlayingMusic();
+        }
+        private void StartPlayingMusic()
+        {
+            player.Play();
+            isMusicPlaying = true;
+        }
+        private void PauseMusic()
+        {
+            player.Stop();
+            isMusicPlaying = false;
+        }
+
+        private void ToggleMusicPlayback()
+        {
+            if (isMusicPlaying)
+            {
+                PauseMusic();
+            }
+            else
+            {
+                StartPlayingMusic();
+            }
+        }
     }
 }

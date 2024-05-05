@@ -37,6 +37,7 @@
             buttonSignUp = new Button();
             label3 = new Label();
             label4 = new Label();
+            button1 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -134,12 +135,25 @@
             label4.TabIndex = 7;
             label4.Text = "Petal and Palette Gallery   ";
             // 
+            // button1
+            // 
+            button1.BackColor = Color.PaleVioletRed;
+            button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
+            button1.BackgroundImageLayout = ImageLayout.Stretch;
+            button1.Location = new Point(572, 174);
+            button1.Name = "button1";
+            button1.Size = new Size(47, 44);
+            button1.TabIndex = 8;
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += sound_Click;
+            // 
             // LoginForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(666, 376);
+            Controls.Add(button1);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(buttonSignUp);
@@ -151,6 +165,7 @@
             Margin = new Padding(1);
             Name = "LoginForm";
             Text = "Login";
+            Load += LoginForm_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -165,5 +180,6 @@
         private Button buttonSignUp;
         private Label label3;
         private Label label4;
+        private Button button1;
     }
 }

@@ -52,7 +52,7 @@
             // textBoxName
             // 
             textBoxName.Location = new Point(130, 88);
-            textBoxName.Margin = new Padding(1, 1, 1, 1);
+            textBoxName.Margin = new Padding(1);
             textBoxName.Name = "textBoxName";
             textBoxName.Size = new Size(214, 27);
             textBoxName.TabIndex = 0;
@@ -73,10 +73,10 @@
             // 
             buttonInsert.BackgroundImage = (Image)resources.GetObject("buttonInsert.BackgroundImage");
             buttonInsert.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonInsert.Location = new Point(81, 391);
-            buttonInsert.Margin = new Padding(1, 1, 1, 1);
+            buttonInsert.Location = new Point(695, 208);
+            buttonInsert.Margin = new Padding(1);
             buttonInsert.Name = "buttonInsert";
-            buttonInsert.Size = new Size(57, 48);
+            buttonInsert.Size = new Size(47, 48);
             buttonInsert.TabIndex = 4;
             buttonInsert.UseVisualStyleBackColor = true;
             buttonInsert.Click += ButtonInsert_Click;
@@ -85,7 +85,7 @@
             // 
             comboBoxPainter.FormattingEnabled = true;
             comboBoxPainter.Location = new Point(130, 127);
-            comboBoxPainter.Margin = new Padding(1, 1, 1, 1);
+            comboBoxPainter.Margin = new Padding(1);
             comboBoxPainter.Name = "comboBoxPainter";
             comboBoxPainter.Size = new Size(214, 28);
             comboBoxPainter.TabIndex = 5;
@@ -94,10 +94,10 @@
             // 
             buttonDelete.BackgroundImage = (Image)resources.GetObject("buttonDelete.BackgroundImage");
             buttonDelete.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonDelete.Location = new Point(656, 391);
-            buttonDelete.Margin = new Padding(1, 1, 1, 1);
+            buttonDelete.Location = new Point(697, 329);
+            buttonDelete.Margin = new Padding(1);
             buttonDelete.Name = "buttonDelete";
-            buttonDelete.Size = new Size(55, 48);
+            buttonDelete.Size = new Size(45, 44);
             buttonDelete.TabIndex = 6;
             buttonDelete.UseVisualStyleBackColor = true;
             buttonDelete.Click += ButtonDelete_Click;
@@ -106,10 +106,10 @@
             // 
             buttonUpdate.BackgroundImage = (Image)resources.GetObject("buttonUpdate.BackgroundImage");
             buttonUpdate.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonUpdate.Location = new Point(363, 395);
-            buttonUpdate.Margin = new Padding(1, 1, 1, 1);
+            buttonUpdate.Location = new Point(697, 268);
+            buttonUpdate.Margin = new Padding(1);
             buttonUpdate.Name = "buttonUpdate";
-            buttonUpdate.Size = new Size(49, 45);
+            buttonUpdate.Size = new Size(45, 44);
             buttonUpdate.TabIndex = 7;
             buttonUpdate.UseVisualStyleBackColor = true;
             buttonUpdate.Click += ButtonUpdate_Click;
@@ -130,7 +130,7 @@
             // 
             dateTimeDate.Format = DateTimePickerFormat.Short;
             dateTimeDate.Location = new Point(130, 210);
-            dateTimeDate.Margin = new Padding(1, 1, 1, 1);
+            dateTimeDate.Margin = new Padding(1);
             dateTimeDate.Name = "dateTimeDate";
             dateTimeDate.ShowCheckBox = true;
             dateTimeDate.Size = new Size(214, 27);
@@ -151,7 +151,7 @@
             // textBoxNotes
             // 
             textBoxNotes.Location = new Point(130, 256);
-            textBoxNotes.Margin = new Padding(1, 1, 1, 1);
+            textBoxNotes.Margin = new Padding(1);
             textBoxNotes.Multiline = true;
             textBoxNotes.Name = "textBoxNotes";
             textBoxNotes.ScrollBars = ScrollBars.Both;
@@ -173,8 +173,8 @@
             // pictureBox1
             // 
             pictureBox1.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox1.Location = new Point(523, 88);
-            pictureBox1.Margin = new Padding(1, 1, 1, 1);
+            pictureBox1.Location = new Point(465, 75);
+            pictureBox1.Margin = new Padding(1);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(169, 130);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -187,12 +187,12 @@
             label7.AutoSize = true;
             label7.BackColor = Color.Transparent;
             label7.Font = new Font("Sylfaen", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.Location = new Point(567, 41);
+            label7.Location = new Point(465, 31);
             label7.Margin = new Padding(1, 0, 1, 0);
             label7.Name = "label7";
-            label7.Size = new Size(67, 26);
+            label7.Size = new Size(72, 26);
             label7.TabIndex = 18;
-            label7.Text = "Image";
+            label7.Text = "Image:";
             // 
             // label2
             // 
@@ -210,7 +210,7 @@
             // 
             comboBoxStyle.FormattingEnabled = true;
             comboBoxStyle.Location = new Point(130, 168);
-            comboBoxStyle.Margin = new Padding(1, 1, 1, 1);
+            comboBoxStyle.Margin = new Padding(1);
             comboBoxStyle.Name = "comboBoxStyle";
             comboBoxStyle.Size = new Size(214, 28);
             comboBoxStyle.TabIndex = 20;
@@ -231,7 +231,7 @@
             // 
             comboBoxPainting.FormattingEnabled = true;
             comboBoxPainting.Location = new Point(130, 42);
-            comboBoxPainting.Margin = new Padding(1, 1, 1, 1);
+            comboBoxPainting.Margin = new Padding(1);
             comboBoxPainting.Name = "comboBoxPainting";
             comboBoxPainting.Size = new Size(214, 28);
             comboBoxPainting.TabIndex = 22;
@@ -242,7 +242,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(773, 450);
+            ClientSize = new Size(773, 391);
             Controls.Add(comboBoxPainting);
             Controls.Add(label3);
             Controls.Add(comboBoxStyle);
@@ -260,7 +260,7 @@
             Controls.Add(buttonInsert);
             Controls.Add(label1);
             Controls.Add(textBoxName);
-            Margin = new Padding(1, 1, 1, 1);
+            Margin = new Padding(1);
             Name = "PaintingEditForm";
             Text = "Painting Edit Form";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
